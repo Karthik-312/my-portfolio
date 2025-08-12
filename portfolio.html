@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Karthikeya's Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .bg-custom-dark {
+            background-color: #1f2937;
+        }
+        .text-custom-light {
+            color: #d1d5db;
+        }
+        .project-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="leading-relaxed">
+
+    <!-- Header Section -->
+    <header class="bg-custom-dark text-custom-light shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-white">Karthikeya Daggupati</h1>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-blue-400 transition duration-300">About</a>
+                <a href="#skills" class="hover:text-blue-400 transition duration-300">Skills</a>
+                <a href="#projects" class="hover:text-blue-400 transition duration-300">Projects</a>
+                <a href="#contact" class="hover:text-blue-400 transition duration-300">Contact</a>
+            </div>
+            <button id="menu-button" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-custom-dark text-custom-light px-4 py-2">
+            <a href="#about" class="block py-2 hover:bg-gray-700 rounded-md transition duration-300">About</a>
+            <a href="#skills" class="block py-2 hover:bg-gray-700 rounded-md transition duration-300">Skills</a>
+            <a href="#projects" class="block py-2 hover:bg-gray-700 rounded-md transition duration-300">Projects</a>
+            <a href="#contact" class="block py-2 hover:bg-gray-700 rounded-md transition duration-300">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-900 text-white py-20 md:py-32 flex items-center justify-center min-h-screen">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-4 animate-fadeInDown">Hello, I'm  Karthikeya</h2>
+            <p class="text-xl md:text-2xl mb-8 animate-fadeInUp">A skilled developer excited to build innovative solutions.</p>
+            <div class="space-x-4">
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 shadow-lg">Get in Touch</a>
+                <a href="#projects" class="border-2 border-white text-white font-bold py-3 px-6 rounded-full hover:bg-white hover:text-gray-900 transition duration-300 shadow-lg">View Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 md:py-32 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-12">
+                <div class="md:w-1/3 text-center">
+                    <img src="C:\Users\daggu\OneDrive\Desktop\photo.jpg" alt="Profile Photo" class="rounded-full mx-auto shadow-xl h-64 w-64 object-cover">
+                    <div class="mt-6 flex justify-center space-x-4">
+                        <a href="https://www.linkedin.com/in/karthikeya-daggupati-14799b313/" target="_blank" class="text-blue-600 hover:text-blue-800 text-2xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Karthik-312" target="_blank" class="text-gray-800 hover:text-gray-600 text-2xl"><i class="fab fa-github"></i></a>
+                        <a href="mailto:daggupatikarthikeya@gmail.com" class="text-red-500 hover:text-red-700 text-2xl"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:+918121046903" class="text-green-500 hover:text-green-700 text-2xl"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+                <div class="md:w-2/3">
+                    <p class="text-lg text-gray-700 mb-4">
+                        To work in an organization where I can seek an opportunity to contribute innovative solutions and measurable results within a collaborative, learning environment. Excited to join a team where I can share expertise, optimize processes, and drive growth through data-driven insights and analysis. Skilled in leveraging data to identify trends, streamline operations, and support strategic decision-making.
+                    </p>
+                    <p class="text-md text-gray-600">
+                        I hold a Bachelor of Engineering in Computer Science and Engineering from CMR Institute of Technology. I am proficient in languages like Java, Python, and C, with a strong foundation in web technologies and frameworks. My project experience includes developing full-stack applications and mobile apps, demonstrating my ability to build robust and user-friendly solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="py-20 md:py-32 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Languages -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center"><i class="fas fa-code text-blue-500 mr-3"></i>Languages</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C</li>
+                    </ul>
+                </div>
+                <!-- Database -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center"><i class="fas fa-database text-blue-500 mr-3"></i>Databases</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </div>
+                <!-- Web Frameworks -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center"><i class="fas fa-cubes text-blue-500 mr-3"></i>Web Frameworks</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Django</li>
+                        <li>Flutter</li>
+                    </ul>
+                </div>
+                <!-- Web Technologies -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center"><i class="fas fa-laptop-code text-blue-500 mr-3"></i>Web Technologies</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Angular</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <!-- Software -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center"><i class="fas fa-tools text-blue-500 mr-3"></i>Software/Tools</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>VS Code</li>
+                        <li>PyCharm</li>
+                        <li>Eclipse</li>
+                        <li>Dart pad</li>
+                        <li>WebStorm</li>
+                        <li>Ubuntu</li>
+                        <li>Google Colab</li>
+                        <li>Jupyter Notebook</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 md:py-32 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project Card 1: Inventory Management System -->
+                <div class="project-card bg-gray-100 p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-2">Inventory Management System</h3>
+                    <p class="text-sm text-gray-500 mb-4">Python, HTML, CSS, JavaScript, Django</p>
+                    <p class="text-gray-700 mb-4">
+                        A software application designed to help businesses efficiently manage and track their inventory, streamline operations, and ensure optimal stock levels. It features product management, inventory tracking, and reporting.
+                    </p>
+                    <a href="https://github.com/Karthik-312/Django-Based-Inventory-Management" target="_blank" class="text-blue-500 hover:text-blue-700 font-semibold flex items-center">
+                        <i class="fab fa-github mr-2"></i> View on GitHub
+                    </a>
+                </div>
+
+                <!-- Project Card 2: Personal Database Management System -->
+                <div class="project-card bg-gray-100 p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-2">Personal Database Management System</h3>
+                    <p class="text-sm text-gray-500 mb-4">MySQL, PHP, HTML, CSS</p>
+                    <p class="text-gray-700 mb-4">
+                        A software application that helps individuals store, organize, and manage personal data efficiently, such as sleep logs and tasks. It provides features like data querying, sorting, and secure access for easy information retrieval.
+                    </p>
+                    <a href="https://github.com/Karthik-312/AI_Based_Customized_Nutrition_For_Every_LifeStyle" target="_blank" class="text-blue-500 hover:text-blue-700 font-semibold flex items-center">
+                        <i class="fab fa-github mr-2"></i> View on GitHub
+                    </a>
+                </div>
+
+                <!-- Project Card 3: Weather App -->
+                <div class="project-card bg-gray-100 p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-2">Weather App</h3>
+                    <p class="text-sm text-gray-500 mb-4">Flutter, Dart, API</p>
+                    <p class="text-gray-700 mb-4">
+                        A Flutter-based weather application that provides real-time weather updates, hourly forecasts, and air quality index data. It features dynamic weather icons, an intuitive UI, and a backend for fetching weather data.
+                    </p>
+                    <a href="https://github.com/Karthik-312/Weather_Application_Using_Flutter" target="_blank" class="text-blue-500 hover:text-blue-700 font-semibold flex items-center">
+                        <i class="fab fa-github mr-2"></i> View on GitHub
+                    </a>
+                </div>
+
+                <!-- Project Card 4: AI Based Customized Nutrition For Every Lifestyle -->
+                <div class="project-card bg-gray-100 p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-2">AI Based Customized Nutrition</h3>
+                    <p class="text-sm text-gray-500 mb-4">Python, Streamlit, FastAPI</p>
+                    <p class="text-gray-700 mb-4">
+                        A smart system that uses artificial intelligence to provide personalized nutrition plans tailored to individual needs, preferences, and lifestyle choices. The AI analyzes data to generate dynamic meal suggestions.
+                    </p>
+                    <a href="https://github.com/Karthik-312/AI_Based_Customized_Nutrition_For_Every_LifeStyle" target="_blank" class="text-blue-500 hover:text-blue-700 font-semibold flex items-center">
+                        <i class="fab fa-github mr-2"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 md:py-32 bg-gray-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
+            <p class="text-lg md:text-xl mb-8 text-gray-300">
+                I'm currently seeking new opportunities. Feel free to reach out!
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                <a href="mailto:daggupatikarthikeya@gmail.com" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 shadow-lg flex items-center">
+                    <i class="fas fa-envelope mr-2"></i> Email Me
+                </a>
+                <a href="https://www.linkedin.com/in/karthikeya-daggupati-14799b313/" target="_blank" class="border-2 border-white text-white font-bold py-3 px-6 rounded-full hover:bg-white hover:text-gray-900 transition duration-300 shadow-lg flex items-center">
+                    <i class="fab fa-linkedin mr-2"></i> Connect on LinkedIn
+                </a>
+            </div>
+            <div class="mt-12 text-gray-400">
+                <p>&copy; <span id="year"></span> DV Karthikeya. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Set current year in the footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
